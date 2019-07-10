@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+    <title>Calendar</title>
+    <meta charset="utf-8">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
+    <script src="main.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="calendar.css">
+</head>
+
+<body>
+    <div id="divAccount">
+        <div id="divLogin">
+            <p>Welcome, you are now browsing as Guest.</p>
+            <p>Please log in to view your events. </p>
+            Username: <input type="text" id="inLoginUsrnm"/><br/>
+            Password: <input type="password" id="inLoginPswd"/><br/>
+            <input type="submit" id="btnLoginSubmit" value="Log in" /><br/>
+        </div>
+        <div id="divRegister">
+            <p>Don't have an account? Register now!</p>
+            Username: <input type="text" id="inRegisterUsrnm"/><br/>
+            Password: <input type="password" id="inRegisterPswd"/><br/>
+            <input type="submit" id="btnRegisterSubmit" value="Sign up" /><br/>
+        </div>  
+        <div id="divLogout">
+            <p id="pWelcome"></p>
+            <input type="submit" id="btnLogoutSubmit" value="Log out"/>
+        </div>
+    </div>
+    
+    <div id="divCal">
+        <div id="divCalBody">
+            <h3 id="headerCal"></h5>
+            <table id="tableCal">
+                <!--tr id="trCal">
+                    <th>Sunday</th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                    <th>Saturday</th>
+                </tr-->
+                
+            </table>
+        </div>
+        <button id="btnCalBodyPre" >Previous Month</button>
+        <button id="btnCalBodyNext" >Next Month</button>
+    </div>
+
+    <div id="divEventList">
+        <h4>Events</h4>
+        <form id="divEventTags">
+            <input type="radio" name="tag" id="disEventTagP" value="personal"> Personal
+            <input type="radio" name="tag" id="disEventTagA" value="academic"> Academic
+            <input type="radio" name="tag"  id="disEventTagW" value="work"> Work 
+            <input type="radio" name="tag"  id="disEventTagH" value="holiday"> Holiday 
+            <input type="radio" name="tag" id="disEventTagB" value="birthday"> Birthday
+        </form>
+        <button type = "button" id="btnDisEventAll">All</button>
+        <table id="tableEventList">
+            <tr>
+                <th>Title</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th></th>
+            </tr>
+        </table>
+    </div>
+
+    <div id="divShare">
+        <!-- <h4>Share Calendar</h4>
+        <select id="menuShareCal">
+        </select> -->
+        <!-- <button type="button" id="btnShareCal">Share</button> -->
+        <button type="button" id="btnGetUsers">getUsers</button>
+    </div>
+
+    <div id="divEventAdd">
+        <h4>Add Event</h4>
+        Title*: <input type="text" id="inEventAddTitle"/><br/>
+        Date*: <input type="date" id="inEventAddDate"/><br/>
+        Time*: <input type="time" id="inEventAddTime"/><br/>
+        Tag: <br/>
+        <input type="radio" name="radioAddTag" id="radioAddTagP" value="personal"> Personal
+        <input type="radio" name="radioAddTag" id="radioAddTagA" value="academic"> Academic
+        <input type="radio" name="radioAddTag" id="radioAddTagW" value="work"> Work 
+        <input type="radio" name="radioAddTag" id="radioAddTagH" value="holiday"> Holiday 
+        <input type="radio" name="radioAddTag" id="radioAddTagB" value="birthday"> Birthday <br/>
+        <input type="submit" id="btnEventAddSubmit" value="Add"/>
+    </div> 
+
+    <div id="divEventEdit">
+        <!-- Title*: <input type="text" id="inEventEditTitle"/><br/>
+        Date*: <input type="date" id="inEventEditDate"/><br/>
+        Time*: <input type="time" id="inEventEditTime"/><br/>
+        <input type="submit" id="btnEventEditSubmit" value="Submit"/> -->
+    </div>
+
+</body>
+</html>
