@@ -1,4 +1,0 @@
-@@@ This is only for debug and not a part of the assignment submission. @@@
-
-1. This is a little funny: my JS deleted all of my events upon login. I think it is because the function deleteEvent() is triggered automatically when the button itself is created in a for loop in the function disEvents(); (commented the $btn.click(deleteEvent()) and events are not deleted.) (good news is deleteEvent is working) UNSOLVED
-
